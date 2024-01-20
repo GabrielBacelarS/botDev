@@ -2,8 +2,8 @@ const crypto = require('crypto');
 const axios = require('axios');
 const { DATE } = require('sequelize');
 const SYMBOL = 'BTCUSDT';
-const BUY_PRICE = 34160;
-const SELL_PRICE = 34501;
+const BUY_PRICE  = 4000;
+const SELL_PRICE = 4100;
 const QUANTITY = '0.001';
 const API_KEY = 'Z4h3qYEZl2sz00KMon8d5xyghh6GrHnPBQQltWgDDloKP3qLK5Gkwo0Qbn1RQeS4';
 const SECRET_KEY = 'hQzRakiJUxjg9d2XIb3k3KO6QdSvsEdUk2e8mD9Q6lBw6rAganUupWO4G8P8McXu';
@@ -62,4 +62,4 @@ async function newOrder(symbol, quantity, side) {
         console.log(err);
     }
 }
-setInterval(start, 5000);
+setInterval(start, 1000);
